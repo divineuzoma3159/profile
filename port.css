@@ -246,12 +246,18 @@ footer{
 footer p{
   font-size: clamp(0.9em,3vh,1.125rem);
   margin-left: auto;
+   overflow-wrap: break-word;
+  word-break: break-all;
 }
 footer .copy{
   margin-left: 0.3rem;
+   overflow-wrap: break-word;
+  word-break: break-all;
 }
 footer #myDates{
   padding-right:  0.5rem;
+   overflow-wrap: break-word;
+  word-break: break-all;
 }
 #div{
   opacity: 0;
@@ -263,6 +269,7 @@ footer #myDates{
   transform: translateY(0);
 
 }
+
 
 
 
