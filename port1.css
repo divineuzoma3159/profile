@@ -3,7 +3,9 @@
   --redish: red;
   --cream: crimson;
 }
-
+html{
+  font-family: sans-serif;
+}
 body{
   padding: 0 ;
   margin: 0;
@@ -259,4 +261,5 @@ footer #myDates{
 #div.show{
   opacity: 1;
   transform: translateY(0);
+
 }
