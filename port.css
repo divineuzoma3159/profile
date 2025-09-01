@@ -166,7 +166,7 @@ border-radius: 6rem;
 }
 .work1{
 border: 1px solid;
-max-width: 50%;
+max-width: 70%;
 display: flex;
 flex-direction: column;
 overflow-x: hidden;
@@ -202,7 +202,7 @@ font-size: clamp(1em,3vh,2rem);
 /* the second box */
 .work2{
 border: 1px solid;
-max-width: 50%;
+max-width: 70%;
 display: flex;
 flex-direction: column;
 overflow-x: hidden;
@@ -262,4 +262,5 @@ footer #myDates{
   transform: translateY(0);
 
 }
+
 
