@@ -1,0 +1,261 @@
+:root{
+  --parasite: blue;
+  --redish: red;
+  --cream: crimson;
+}
+
+body{
+  padding: 0 ;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+/* the nav bar */
+.navs{
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(135deg,blue,red);
+  color: white;
+}
+.navs h1{
+  margin-top: auto;
+  margin-right: auto;
+  padding-top: 1rem ;
+}
+.navs ul li {
+  display: inline;
+  list-style: none;
+  font-size: clamp(0.9em,2vh,3rem);
+  padding: 0;
+  position: relative;
+  margin: 0;
+  margin-top: auto;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.navs ul li::before{
+  content: '';
+  position: absolute;
+  top: 1.2rem;
+  background: linear-gradient(135deg,blue,purple);
+  height: 4px;
+  width: 0;
+  transition: width 0.6s ease-in-out;
+
+}
+.navs ul li:hover::before{
+  width: 100%;
+}
+/* The main section */
+main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+/* the div holding the image inside the div called holding */
+.images{
+  width:20rem;
+  height: auto;
+  margin-top: 1rem;
+  border: 4px solid var(--cream);
+  border-radius: 5px;
+  box-shadow: 2px 6px 15px black;
+}
+.images img{
+  width: 20rem;
+  height: 18rem;
+}
+/* the div holding everything in the first side */
+.holding{
+ background-color:rgb(145, 206, 54);
+ padding-bottom: 1rem;
+ position: relative;
+ max-width: 100%;
+ overflow-x: hidden;
+ padding: 0.2rem;
+}
+/* the text in the first side */
+.holding h1{
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  font-size: clamp(1.9em,2vh,3rem);
+  color: white;
+  font-family: sans-serif;
+}
+.holding p{
+  color: white;
+  font-size: clamp(1em,2.5vw,1.125rem);
+  white-space: normal;
+  word-wrap: break-word;
+  width: 100%;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+/* the image next to the info h1 */
+.imgs{
+  position: absolute;
+  border-radius: 6rem;
+  left: 15rem;
+  top: 0.8rem;
+  height: 3.5rem;
+  border: 1px solid ;
+  box-shadow: -2px 2px 15px black;
+}
+.imgs img{
+  width: 3.5rem;
+  height: 3.5rem;
+border-radius: 6rem;
+}
+/* the div holder */
+.info{
+  margin-top: 10rem;
+  overflow-x: hidden;
+  position: relative;
+}
+.info h1{
+  font-size: clamp(1.8em,2vh,3rem);
+  position: relative;
+ left: 6rem;
+}
+.info p{
+  font-size: clamp(0.9em,3vh,1.125rem);
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 0 0.2rem;
+}
+/* the buttons in the info side */
+.button{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.button button{
+  background: linear-gradient(115deg,crimson,blue);
+  color: white;
+  border: none;
+  position: relative;
+  border-radius: 5px;
+  padding: 0.4rem 0.9rem;
+  transition: scale 0.5s ease-in-out;
+}
+.button button:hover{
+  scale:1.05;
+}
+/* The work section */
+ .work{
+  margin-top: 8rem;
+}
+/* the div making them to go in a row*/
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.work h1{
+  position: relative;
+  text-align: center;
+}
+.work1{
+border: 1px solid;
+max-width: 50%;
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
+align-items: center;
+justify-content: center;
+position: relative;
+flex-grow: 1;
+padding: 1rem;
+box-shadow: -2px 6px 15px black;
+transition: transform 1s ease-in-out;
+}
+.work1:hover{
+  transform: translateY(5px);
+}
+.work1 h1{
+  position: relative;
+  left: 0.2rem; 
+}
+.work1 p{
+font-size: clamp(0.9em,3vh,1.125rem);
+position: relative;
+overflow-wrap: break-word;
+word-wrap: break-word;
+left: 0.5rem;
+}
+.work1 .clicks{
+  position: relative;
+  left: 0;
+}
+.work1 a{
+font-size: clamp(1em,3vh,2rem);
+}
+/* the second box */
+.work2{
+border: 1px solid;
+max-width: 50%;
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
+align-items: center;
+justify-content: center;
+position: relative;
+flex-grow: 1;
+padding: 1rem;
+box-shadow: -2px 6px 15px black;
+transition: transform 1s ease-in-out;
+}
+.work2:hover{
+  transform: translateY(5px);
+}
+.work2 h1{
+  position: relative;
+  left: 0.2rem;
+}
+.work2 p{
+font-size: clamp(0.9em,3vh,1.125rem);
+position: relative;
+left: 0.5rem;
+}
+.work2 .clicks1{
+  position: relative;
+  left: 0;
+}
+.work2 a{
+font-size: clamp(1em,3vh,2rem);
+} 
+/* The footer section */
+footer{
+  display: flex;
+  background: linear-gradient(135deg,orange,red);
+  color: white;
+  position: relative;
+  top: 5rem;
+  padding: 1rem 0;
+}
+footer p{
+  font-size: clamp(0.9em,3vh,1.125rem);
+  margin-left: auto;
+}
+footer .copy{
+  margin-left: 0.3rem;
+}
+footer #myDates{
+  padding-right:  0.5rem;
+}
+#div{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1s ease;
+}
+#div.show{
+  opacity: 1;
+  transform: translateY(0);
+}
