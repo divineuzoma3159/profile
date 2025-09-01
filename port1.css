@@ -100,8 +100,8 @@ main{
 .imgs{
   position: absolute;
   border-radius: 6rem;
-  left: 23rem;
-  top: 0.8rem;
+  left: 24rem;
+  top: 0.5rem;
   height: 3.5rem;
   border: 1px solid ;
   box-shadow: -2px 2px 15px black;
@@ -263,3 +263,4 @@ footer #myDates{
   transform: translateY(0);
 
 }
+
